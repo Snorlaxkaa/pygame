@@ -19,8 +19,8 @@ imag = pg.image.load("/Users/huangzongyan/Documents/pygame/頭貼.jpg")
 imag.convert()
 bg.blit(imag, (100,10))
 
-font = pg.fpnt.SysFont("simhei", 24)
-text = font.rnendeer("Hello", True, (0,0,255),(255,255,255))
+font = pg.font.SysFont("simhei", 24)
+text = font.render("Hello", True, (0,0,255), (255,255,255))
 bg.blit(text, (320,240))
 
 #顯示
