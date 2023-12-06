@@ -5,16 +5,16 @@ pg.init()
 #設定視窗背景
 width, height = 640, 480                      
 screen = pg.display.set_mode((width, height))  
-pg.display.set_caption("Sean's game")        
+pg.display.set_caption("球球")        
 bg = pg.Surface(screen.get_size())
 bg = bg.convert()
 bg.fill((255,255,255))
 
 
 #藍球建立
-ball = pg.Surface((70,70))
+ball = pg.Surface((100,100))
 ball.fill((255,255,255))
-pg.draw.circle(ball, (111,0,255), (15,15), 35, 0)
+pg.draw.circle(ball, (111,0,255), (35,35), 35, 0)
 rect = ball.get_rect()
 rect.center = (320,240)    
 x, y = rect.topleft              
